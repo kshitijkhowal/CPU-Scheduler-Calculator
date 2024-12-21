@@ -6,8 +6,9 @@ const ListOfAlgorithms = () => {
     const algorithms = [
         { name: "First Come First Serve (FCFS)", path: "/fcfs" },
         { name: "Shortest Job First (SJF)", path: "/sjf" },
-        { name: "Round Robin", path: "/round-robin" },
         { name: "Priority Scheduling", path: "/priority" },
+        { name: "Shortest Remaining Time First (SRTF)", path: "/srtf" },
+        { name: "Round Robin", path: "/round-robin" },
     ];
 
     return (

@@ -5,6 +5,7 @@ import FCFSPage from "./pages/FCFSPage.jsx";
 import SJFPage from "./pages/SJFPage.jsx";
 import RoundRobin from "./pages/RoundRobin.jsx";
 import PriorityPage from "./pages/PriorityPage.jsx";
+import SRTFPage from "./pages/SRTFPage.jsx";
 
 export default function App() {
   return (
@@ -13,8 +14,9 @@ export default function App() {
         <Route path="/" element={<HomeScreen/>}/>
         <Route path="/fcfs" element={<FCFSPage/>}/>
         <Route path="/sjf" element={<SJFPage/>}/>
-        <Route path="/round-robin" element={<PriorityPage/>}/>
-        <Route path="/priority" element={<RoundRobin/>}/>
+        <Route path="/round-robin" element={<RoundRobin/>}/>
+        <Route path="/priority" element={<PriorityPage/>}/>
+        <Route path="/srtf" element={<SRTFPage/>}/>
       </Routes>
     </BrowserRouter>
   )

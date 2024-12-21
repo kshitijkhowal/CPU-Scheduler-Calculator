@@ -2,17 +2,17 @@ import React, { useState } from 'react'
 import Navbar from "../components/Navbar.jsx";
 import InputForm from '../components/InputForm.jsx';
 import Footer from "../components/Footer.jsx"
-import { priority } from '../algorithms/PriorityAlgo.js';
+import { srtf } from '../algorithms/SRTFAlgo.js';
 import ResultsTable from '../components/ResultTable.jsx';
 import GanttChart from '../components/GanttChart.jsx';
 
-const PriorityPage = () => {
+const SRTFPage = () => {
 
   const [result,setResult]=useState([]);
 
   const handleFormSubmit=(processes)=>{
     // console.log("submitted Processes",processes);
-    const output=priority(processes);
+    const output=srtf(processes);
     setResult(output);
     console.log(result);
   }
@@ -21,7 +21,7 @@ const PriorityPage = () => {
     <div className="min-h-screen bg-gray-900 flex flex-col">
 
       
-      <Navbar title="Priority Algorithm"/>
+      <Navbar title="Shortest Remaining Time First (SRTF)"/>
 
 
       <main className="flex-grow">
@@ -42,4 +42,4 @@ const PriorityPage = () => {
   )
 }
 
-export default PriorityPage
+export default SRTFPage
