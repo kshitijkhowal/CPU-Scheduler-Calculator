@@ -30,7 +30,7 @@ const SRTFPage = () => {
       {/* Result Table */}
       <ResultsTable results={result} />
       {/* Gant Chart */}
-      <GanttChart results={result} />
+      {/* <GanttChart results={result} /> */}
 
 
       </main>
