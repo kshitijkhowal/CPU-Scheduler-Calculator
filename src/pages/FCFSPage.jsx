@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Navbar from "../components/Navbar.jsx";
 import InputForm from '../components/InputForm.jsx';
 import Footer from "../components/Footer.jsx"
-import { fcfs } from '../algorithms/Scheduler.js';
+import { fcfs } from '../algorithms/FCFSAlgo.js';
 import ResultsTable from '../components/ResultTable.jsx';
 import GanttChart from '../components/GanttChart.jsx';
 

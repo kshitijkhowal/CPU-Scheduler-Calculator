@@ -2,7 +2,7 @@ import React from "react";
 
 const TimeQuantumInput = ({ timeQuantum, setTimeQuantum }) => {
   return (
-    <div className="p-4 bg-gray-800 rounded-lg shadow-md text-white">
+    <div className="mt-9 mx-4 p-4 bg-gray-800 rounded-lg shadow-md text-white">
       <h2 className="text-xl font-bold mb-2">Set Time Quantum</h2>
       <div className="flex items-center gap-4">
         <label htmlFor="timeQuantum" className="text-gray-300">
@@ -17,9 +17,7 @@ const TimeQuantumInput = ({ timeQuantum, setTimeQuantum }) => {
           min="1"
         />
       </div>
-      <p className="text-sm text-gray-400 mt-2">
-        * Time Quantum defines how long each process will run in one cycle.
-      </p>
+      
     </div>
   );
 };
